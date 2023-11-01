@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 250px 30px;
+        }
+        header{
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.854) 0, rgb(0 0 0 / 48%) 59%, rgb(0 0 0 / 94%) 100%), url(images/background.png)no-repeat center center/cover;
+            clip-path: polygon(100% 0, 100% 76%, 50% 100%, 0 77%, 0 0);
+        }
+        .nav-menu a{
+            font-size: 14px;
+            /* color: #e74c3c; */
+            color: #ffffff;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+        .logo img{
+            width: 80px;
+        }
+        .text{
+            color: #ffffff;
+            text-align: center;
+            padding: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .para{
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+        .title{
+            padding-bottom: 40px;
+            font-size: 45px;
+        }
+        .para2{
+            padding: 0 420px;
+        }
+        button{
+            margin-top: 32px;
+            padding: 10px 20px;
+        }
+        .btn1{
+            border-radius: 3px;
+            background-color: #e74c3c;
+        }
+        .btn2{
+            border-radius: 3px;
+            background-color: transparent;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+        .icon{
+            font-size: 30px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .card-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 100px;
+        }
+        .card-text{
+            text-align: center;
+        }
+        .card-title{
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        .body-text{
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="container">
+                <div class="nav">
+                    <div class="logo">
+                        <img src="images/Logo (1).png" alt="">
+                    </div>
+                    <div class="nav-menu">
+                        <a href="">HOME</a>
+                        <a href="">ABOUT US</a>
+                        <a href="">PORTFOLIO</a>
+                        <a href="">PRICING</a>
+                        <a href="">TEAM</a>
+                        <a href="">BLOG</a>
+                        <a href="">CONTACT</a>
+                    </div>
+                </div>
+                <div class="text">
+                    <p class="para">Our Clients Are Our First Priority</p>
+                    <h1 class="title">WELCOME TO SKY</h1>
+                    <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facere quo esse assumenda cum voluptates enim modi, maxime error dolorum, quasi sunt! Tempore, quae non?</p>
+                    <button class="btn1">GET STARTED NOW</button>
+                    <button class="btn2">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-infinity"></i>
+                    </div>
+                    <div class="card-text">
+                        <p class="card-title">SLEEK DESIGN</p>
+                        <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eligendi assumenda eveniet accusamus quidem nam quibusdam aspernatur doloremque.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="card-text">
+                        <p class="card-title">CLEAN CODE</p>
+                        <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eligendi assumenda eveniet accusamus quidem nam quibusdam aspernatur doloremque.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </div>
+                    <div class="card-text">
+                        <p class="card-title">CREATIVE IDEAS</p>
+                        <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eligendi assumenda eveniet accusamus quidem nam quibusdam aspernatur doloremque.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-regular fa-message"></i>
+                    </div>
+                    <div class="card-text">
+                        <p class="card-title">FREE SUPPORT</p>
+                        <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eligendi assumenda eveniet accusamus quidem nam quibusdam aspernatur doloremque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
